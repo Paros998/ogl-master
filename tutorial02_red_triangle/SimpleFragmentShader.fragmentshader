@@ -1,0 +1,13 @@
+#version 330 core
+
+// input
+in vec4 rgba;
+
+// Ouput data
+out vec4 color;
+
+void main()
+{
+	// Output color = red 
+	color = vec4(rgba);
+}

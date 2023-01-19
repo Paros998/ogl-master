@@ -1,0 +1,21 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Maszyna lokalna": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\external\\glfw-3.1.2",
+    "\\external\\glfw-3.1.2\\include",
+    "\\out",
+    "\\pg_dg",
+    "\\pg_dg\\lab4",
+    "\\pg_dg\\lab4\\assets",
+    "\\pg_dg\\lab4\\shaders",
+    "\\pg_dg\\lab4\\shaders\\multiTexture",
+    "\\pg_dg\\lab4\\shaders\\simpleTexture"
+  ],
+  "PreviewInSolutionExplorer": false
+}
