@@ -310,6 +310,33 @@ target_link_libraries(lab4
 set_target_properties(lab4 PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/pg_dg/lab4/")
 create_target_launcher(lab4 WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/pg_dg/lab4/")
 
+# lab5
+add_executable(lab5
+	pg_dg/lab5/lab5.cpp
+
+	pg_dg/common/Shader.h
+	pg_dg/common/GlobalData.h
+	pg_dg/common/Vector2f.h
+	pg_dg/common/Vector2i.h
+	pg_dg/common/stb_image.h
+	pg_dg/common/Roller.h
+
+	pg_dg/common/Shader.cpp
+	pg_dg/common/GlobalData.cpp
+	pg_dg/common/Vector2f.cpp
+	pg_dg/common/Vector2i.cpp
+	pg_dg/common/Roller.cpp
+
+	pg_dg/lab5/shaders/Basic.vert
+	pg_dg/lab5/shaders/Color.frag
+)
+target_link_libraries(lab5
+	${ALL_LIBS}
+)
+# Xcode and Visual working directories
+set_target_properties(lab5 PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/pg_dg/lab5/")
+create_target_launcher(lab5 WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/pg_dg/lab5/")
+
 SOURCE_GROUP(common REGULAR_EXPRESSION ".*/common/.*" )
 SOURCE_GROUP(shaders REGULAR_EXPRESSION ".*/.*shader$" )
 SOURCE_GROUP(assets REGULAR_EXPRESSION ".*/.*assets" )
